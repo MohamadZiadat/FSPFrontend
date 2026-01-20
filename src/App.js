@@ -7,7 +7,7 @@ function App() {
   // Step A: Fetch data from your Java Backend
   const fetchExpenses = async () => {
     try {
-      const response = await axios.get("https://fsp-frontend.vercel.app/");
+      const response = await axios.get("https://fspbackend-production.up.railway.app/api/expenses");
       setExpenses(response.data);
     } catch (error) {
       console.error("Error connecting to Java:", error);
